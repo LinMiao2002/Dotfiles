@@ -1,0 +1,21 @@
+[user]
+	name = LinMiao
+	email = 87746650+LinMiao2002@users.noreply.github.com
+[safe]
+	directory = /opt/homebrew/Library/Taps/homebrew/homebrew-core
+[http]
+    postBUffer = 5242880000
+	lowSpeedLimit = 0
+	lowSpeedTime = 999999
+[core]
+	compression = 0
+	excludesfile = ~/.gitignore_global
+[alias]
+    graph = log --all --graph --decorate --oneline
+[credential]
+	helper = cache --timeout=360000
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
