@@ -2,6 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source ~/.bash_profile
 . /opt/homebrew/etc/profile.d/autojump.sh
 
