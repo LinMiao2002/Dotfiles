@@ -4,7 +4,6 @@ export TOMCAT_HOME="$HOME/Tomcat"
 export PATH=$PATH:$TOMCAT_HOME/bin
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/mysql/support-files
-# export PATH="$HOME/anaconda3/bin:$PATH"  # commented out by conda initialize
 export PATH=$PATH:/Applications/Matlab.app/bin
 export QTDIR=/opt/homebrew/Cellar/qt/6.6.2_1
 export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH 
@@ -18,14 +17,14 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$($HOME/anaconda3/bin/conda 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="$HOME/anaconda3/bin:$PATH"
+        export PATH="/opt/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
