@@ -3,6 +3,10 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
+export PATH="/opt/homebrew/opt/qt@6/bin:$PATH"
+export PATH="/opt/homebrew/opt/pyqt@6/bin:$PATH"
+
 source ~/.bash_profile
 . /opt/homebrew/etc/profile.d/autojump.sh
 
@@ -112,3 +116,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
