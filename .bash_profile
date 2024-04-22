@@ -5,7 +5,7 @@ export PATH=$PATH:$TOMCAT_HOME/bin
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=$PATH:/usr/local/mysql/support-files
 export PATH=$PATH:/Applications/Matlab.app/bin
-export QTDIR=/opt/homebrew/Cellar/qt/6.6.2_1
+export QTDIR=/opt/homebrew/Cellar/qt/6.6.2_2
 export LD_LIBRARY_PATH=$QTDIR/lib:$LD_LIBRARY_PATH 
 export PATH=$QTDIR/bin:$PATH 
 
